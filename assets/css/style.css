@@ -1,0 +1,104 @@
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: beige;
+    font-size: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(20, 20, 74);
+    color: beige;
+    border: solid 10px white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h1{
+    font-size: 250%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:6%
+}
+
+nav a{
+    color: beige;
+    text-decoration: none; 
+    padding: 20px;
+}
+
+nav a:hover{
+    color:white;
+    font-size: 120%;
+}
+
+
+.about,
+.my-work,
+.my-resume,
+.contact
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1 1 200px;
+}
+
+ h2{
+    position: relative;
+    display:inline-block;
+    padding-bottom: 50px;
+    padding-right: 5px;
+    padding-top:5px;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    margin-left: 1%;
+    min-width: 10%;
+    border-right: solid 1px black;
+}
+
+p{
+    display:flex;
+    flex-wrap: wrap;
+    flex: 1 1 75%;
+    position: absolute;
+    margin-left: 15%;
+    margin-right: 3%;
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    position: relative;
+    padding-top: 2%;
+}
+
+.contact a{
+    margin: 100px;
+}
+
+.contact a:hover{
+    color:black;
+    font-size: 120%;
+}
+
+.contact a:active{
+    color:blue;
+}
+
+footer {
+    background-color: rgb(20, 20, 74);
+    color: beige;
+    border: solid 10px white;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+h6{
+    text-align: center;
+}
