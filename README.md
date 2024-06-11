@@ -6,4 +6,9 @@ My Portfolio
     The first project appears larger than the others in the grid.
     Each project is labeled.
     The browser has a responsive layout when the viewport is changed.
+
+Link to deployed site: https://scottreynolds6294.github.io/My-Portfolio/
+
+![Alt text](Screenshot.jpg)
+
 This project was completed by Scott Reynolds
