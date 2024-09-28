@@ -5,61 +5,139 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" text="text/css" href="./assets/css/style.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" text="text/css" href="./assets/css/style.css">
  </head>
 
-<body>
- <header> 
-    <h1>My Portfolio</h1>
+<body class="libre-baskerville-regular">
+ <header class="d-flex justify-content-between align-items-center mb-4 p-3">
+    <h1 class="m-0">My Portfolio<i class="bi bi-person-circle"></i></h1>
     <nav>
-        <ul>
-            <li><a href="#about-me"> About Me </a></li>
-            <li><a href="#work"> Work </a></li>
-            <li><a href="#contact-me"> Contact Me </a></li>
+        <ul class="d-flex list-unstyled m-0">
+            <li class="ms-3"><a href="#about-me">About Me</a></li>
+            <li class="ms-3"><a href="#work">Work</a></li>
+            <li class="ms-3"><a href="#contact-me">Contact Me</a></li>
+            <li class="ms-3"><a href="./assets/resume/Scott-Reynolds-Resume.pdf">Resume</a></li>
         </ul>
     </nav>    
 </header>
 
- <main>
-    <div class="profile-picture">
-      <img src="./assets/images/Profile-picture.jpg" alt="profile picture"></img>
-    </div>
-    <section class="about" id="about-me">
-        <h2>About Me</h2>
-             <p> I am currently, a student in the Uconn School of Engineering Coding Bootcamp, studying HTML, CSS and JavaScript. 
-                This is my portfolio, that contains projects I have completed. 
-                As well as a contact informaton for my phone, email, Github and LinkeIn profile. 
-                You will also find an up to date resume. 
-                Please reach out if you have any questions or comments.  
-            </p>
-    </section>
+<main class="container">
 
-    <section class="my-work" id="work">
-        <h2>Work</h2>
-            <div class="images">
-                    <div><a href="https://scottreynolds6294.github.io/module-1-challenge"> <img src="./assets/images/Coding-Image-2.jpeg" alt="Project 1 Image"></img></a>
-                        <div class="title">Challenge 1: Horiseon Code Refactor</div></div>
-                    <div><a href="#"><img src="./assets/images/Coding-Image.jpeg" alt="Project 2 Image"></img></a>
-                        <div class="title">Project 2</div></div>
-                    <div><a href="#"><img src="./assets/images/Band.jpeg" alt="Project 3 Image"></img></a>
-                        <div class="title">Project 3</div></div>
+    <section class="about mb-5" id="about-me">
+        <div class="about-row d-flex gap-4">
+            <h2 class="flex-shrink-0">About Me</h2>
+            <div class="about-content d-flex flex-row align-items-center gap-3">
+                <div class="profile-picture">
+                    <img src="./assets/images/Scott-2.jpg" alt="profile picture"></img>
+                </div>
+                <p class="mb-0"> 
+                    My name is Scott Reynolds, a former general manger currently seeking to tranistion to a software engineering role. 
+                    I am enrolled in the UConn Engineering Coding Bootcamp, finishing in November 2024. My technical skills include: 
+                    Git, HTML, CSS, JavaScript, Node.js, Object-Oriented Programming (OOP), Express.js, SQL, NoSQL, React and MERN Stack.
+                    Below, you can find some projects demonstrating my knowledge and skills. Please feel free to reach out!
+  
+                </p>
             </div>
+        </div>
+    </section>
+    
+
+    <section class="my-work mb-5" id="work">
+        <div class="my-work-row">
+            <h2>Work</h2>
+            <div class="portfolio-content">
+                <div class="images-grid d-grid gap-4 ">
+                    <div class="grid-item">
+                        <a href="https://trip-planner-b5zi.onrender.com/">
+                            <img src="./assets/images/Screenshot 2024-09-27 at 4.02.44 PM.jpg" alt="Trip Planner App Image"></img>
+                            <div class="image-hover-text">Deployed on Render. Applications deployed on Render can take longer to load.</div>
+                        </a>
+                        <div class="title">Trip Planner App</div>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://tech-blog-ikrx.onrender.com/">
+                            <img src="./assets/images/Screenshot 2024-09-27 at 4.03.08 PM.jpg" alt="Tech Blog Image"></img>
+                            <div class="image-hover-text">Deployed on Render. Applications deployed on Render can take longer to load.</div>
+                        </a>
+                        <div class="title">Tech Blog Demo</div>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://scottreynolds6294.github.io/Weather-Dashboard/">
+                            <img src="./assets/images/Screenshot 2024-09-27 at 4.28.36 PM.jpg" alt="Weather DashboardImage"></img>
+                        </a>
+                        <div class="title">Weather Dashboard</div>
+                     </div>
+                     <div class="grid-item">
+                        <a href="https://natale565.github.io/movie-night/">
+                            <img src="./assets/images/Screenshot 2024-09-27 at 4.46.07 PM.jpg" alt="Movie Database Image"></img>
+                        </a>
+                        <div class="title">Movie Database App</div>
+                     </div>
+                     <div class="grid-item">
+                        <a href="https://note-taker-app-in84.onrender.com/">
+                            <img src="./assets/images/Screenshot 2024-09-27 at 6.23.47 PM.jpg" alt="Note Taking App Image"></img>
+                            <div class="image-hover-text">Deployed on Render. Applications deployed on Render can take longer to load.</div>
+                        </a>
+                        <div class="title">Note Taking App</div>
+                     </div>
+                     <div class="grid-item">
+                     <a href="https://app.screencastify.com/v3/watch/qKKIHDRTjmB1yXZDvGhE">
+                        <img src="./assets/images/Screenshot 2024-09-27 at 6.28.34 PM.jpg" alt="E-Commerce Backend Image"></img>
+                        <div class="image-hover-text">Watch the video, demonstrating the functionality of an e-commerce back end.</div>
+                    </a>
+                    <div class="title">E-Commerce Back End</div>
+                 </div>
+            </div>
+        </div>
     </section>
 
-    <section class="contact" id="contact-me">
-        <h2> Contact Me</h2>
-                <ul>
-                    <li><a href="tel:8602994511"> (860) 299-4511</a></li>
-                    <li><a href="mailto:scottreynolds6294@gmail.com">scott.reynolds6294@gmail.com</a></li>
-                    <li><a href="https://github.com/scottreynolds6294?tab=repositories">Github</a></li>
-                    <li><a href="https://www.linkedin.com/in/scott-reynolds2/">LinkedIn</a></li>
-                </ul>
-    </section>
+    <section class="contact mb-5" id="contact-me">
+    <div class="my-contact-row">
+        <h2>Contact Me</h2>
+        <div class="contact-content d-flex gap-3">
+            <ul class="list-unstyled d-flex w-100 gap-3">
+                <li class="flex-grow-1">
+                    <a href="tel:8602994511" class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center btn-phone" style="height: 50px;">
+                        <span class="default-text"><i class="bi bi-telephone me-2"></i>Call</span>
+                        <span class="hover-text">860-299-4511</span>
+                    </a>
+                </li>
+                <li class="flex-grow-1">
+                    <a href="mailto:scottreynolds6294@gmail.com" class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center btn-email" style="height: 50px;">
+                        <span class="default-text"><i class="bi bi-at me-2"></i>Email</span>
+                        <span class="hover-text">scottreynolds6294@gmail.com</span>
+                    </a>
+                </li>
+                <li class="flex-grow-1">
+                    <a href="https://github.com/scottreynolds6294?tab=repositories" class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center" style="height: 50px;">
+                        <i class="bi bi-github me-2"></i> GitHub Profile
+                    </a>
+                </li>
+                <li class="flex-grow-1">
+                    <a href="https://www.linkedin.com/in/scott-reynolds2/" class="btn btn-primary btn-lg w-100 d-flex align-items-center justify-content-center" style="height: 50px;">
+                        <i class="bi bi-linkedin me-2"></i> LinkedIn Profile
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
     
- </main>
- <footer class="footer">
-    <h6>Made by Scott Reynolds</h6>
+ 
+    
+
+</main>
+
+<footer class="footer text-center py-3">
+    <h6 class="m-0"><i class="bi bi-c-circle"></i> 2024</h6>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
